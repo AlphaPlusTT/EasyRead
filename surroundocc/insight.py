@@ -318,6 +318,8 @@ for i in range(fpn_level):
     #         intermediate.append(output)
 
     # [OccLayer]
+    # [OccLayer, OccLayer, OccLayer]
+    # [OccLayer, OccLayer, OccLayer, OccLayer, OccLayer, OccLayer]
     # -----------------------------------------layers start-----------------------------------------
     query = volume_queries  # 0: torch.Size([1, 100*100*8, 128])
     key = feat_flatten  # 0: torch.Size([6, 116*200, 1, 128])
